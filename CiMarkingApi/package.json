@@ -1,0 +1,24 @@
+{
+  "name": "ci-marking",
+  "version": "1.0.0",
+  "description": "web application to collect student codes, build it and grade.",
+  "main": "lambda.js",
+  "scripts": {
+    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-southeast-1",
+    "update": "claudia update",
+    "generate-proxy": "claudia generate-serverless-express-proxy --express-module app"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "aws-sdk": "^2.6.7",
+    "aws-serverless-express": "^1.1.1",
+    "express": "^4.14.0",
+    "body-parser": "^1.8.1",
+    "s3": ">=4.4.0",
+    "denodeify": "^1.2.1",
+    "superb": "^1.2.0"
+  },
+  "devDependencies": {
+    "claudia": "^2.1.0"
+  }
+}

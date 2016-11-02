@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "ci-marking-executor",
+    "name": "ci-marking",
+    "region": "ap-southeast-1"
+  },
+  "api": {
+    "id": "f876wl5d27"
+  }
+}
